@@ -7,9 +7,9 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/remindRegister"
+        android:id="@+id/LgnBtn"
         android:layout_width="173dp"
-        android:layout_height="42dp"
+        android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="252dp"
         android:background="@drawable/rounded_button"
@@ -18,11 +18,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerPassword"
+        app:layout_constraintTop_toBottomOf="@+id/lgnPassword"
         app:layout_constraintVertical_bias="0.486" />
 
     <EditText
-        android:id="@+id/registerPassword"
+        android:id="@+id/lgnPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -31,10 +31,11 @@
         android:ems="10"
         android:hint="Hasło"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerMail" />
+        app:layout_constraintTop_toBottomOf="@+id/lgnMail" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -47,7 +48,7 @@
         app:srcCompat="@drawable/lg" />
 
     <EditText
-        android:id="@+id/registerMail"
+        android:id="@+id/lgnMail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -56,6 +57,7 @@
         android:ems="10"
         android:hint="Adres email"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,10 +71,10 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/remindRegister"
+        app:layout_constraintEnd_toEndOf="@+id/LgnBtn"
         app:layout_constraintHorizontal_bias="0.394"
-        app:layout_constraintStart_toStartOf="@+id/remindRegister"
-        app:layout_constraintTop_toBottomOf="@+id/remindRegister">
+        app:layout_constraintStart_toStartOf="@+id/LgnBtn"
+        app:layout_constraintTop_toBottomOf="@+id/LgnBtn">
 
         <TextView
             android:id="@+id/mainTextView"
@@ -105,5 +107,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         />
+
+    <TextView
+        android:id="@+id/badLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bad login"
+        android:textColor="@color/design_default_color_error"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/przypomnijTxt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

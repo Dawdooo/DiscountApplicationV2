@@ -9,9 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DiscountApp">
-        <activity android:name=".Register"></activity>
+        <activity
+            android:name=".ProductProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Products"
+            android:exported="false"
+            android:label="@string/title_activity_products"
+            android:theme="@style/Theme.DiscountApp.NoActionBar" />
+        <activity android:name=".Register" />
         <activity android:name=".remindPassword" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

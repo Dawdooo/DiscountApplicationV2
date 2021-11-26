@@ -7,7 +7,7 @@
     tools:context=".Register">
 
     <Button
-        android:id="@+id/remindRegister"
+        android:id="@+id/LgnBtn"
         android:layout_width="173dp"
         android:layout_height="42dp"
         android:layout_marginBottom="160dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toBottomOf="@+id/remindRepeatPassword" />
 
     <EditText
-        android:id="@+id/registerPassword"
+        android:id="@+id/lgnPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -31,7 +31,7 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerMail" />
+        app:layout_constraintTop_toBottomOf="@+id/lgnMail" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -44,7 +44,7 @@
         app:srcCompat="@drawable/lg" />
 
     <EditText
-        android:id="@+id/registerMail"
+        android:id="@+id/lgnMail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -70,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/lgnPassword" />
 
     <TextView
         android:id="@+id/remindStatue"
@@ -83,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/remindRegister"
+        app:layout_constraintTop_toBottomOf="@+id/LgnBtn"
         app:layout_constraintVertical_bias="0.347" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

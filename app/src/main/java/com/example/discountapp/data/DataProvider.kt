@@ -46,23 +46,51 @@ object  DataProvider {
             id = 6,
             title = "VERSACE TRIGRECA",
             price = 2753,
-            code = "",
+            code = "NONE",
             link = "https://www.vitkac.com/pl/p/buty-sportowe-trigreca-versace-buty-1528634",
             image = R.drawable.p6
         ),Product(
             id = 7,
             title = "OFF-WHITE MID TOP VULCANIZED",
             price = 998,
-            code = "",
+            code = "NONE",
             link = "https://www.vitkac.com/pl/p/buty-sportowe-za-kostke-mid-top-vulcanized-off-white-1-buty-1534225",
             image = R.drawable.p7
         ),Product(
             id = 8,
             title = "GIUSEPPE ZANOTTI MAY LONDON",
             price = 2336,
-            code = "",
+            code = "NONE",
             link = "https://www.vitkac.com/pl/p/buty-sportowe-may-london-giuseppe-zanotti-buty-nero-1525759",
             image = R.drawable.p8
-        ),
+        ),Product(
+            id = 9,
+            title = "NIKE DOWNSHIFTER 10",
+            price = 240,
+            code = "GAME21",
+            link = "https://www.nike.com/pl/t/meskie-buty-do-biegania-po-asfalcie-downshifter-10-3J6k7H/CI9981-004",
+            image = R.drawable.p9
+        ), Product(
+            id = 10,
+            title = "NIKE AIR MAX 95 SAKURA",
+            price = 564,
+            code = "GAME21",
+            link = "https://www.nike.com/pl/t/buty-air-max-95-hHkLbN/DH9792-100",
+            image = R.drawable.p10
+        ), Product(
+            id = 11,
+            title = "PUMA CA PRO CLASSIC",
+            price = 280,
+            code = "CYBER",
+            link = "https://eu.puma.com/pl/pl/pd/buty-sportowe-ca-pro-classic/380190.html?dwvar_380190_color=06",
+            image = R.drawable.p11
+        ), Product(
+            id = 12,
+            title = "PUMA WILD RIDER ROLLIN",
+            price = 182,
+            code = "CYBER",
+            link = "https://eu.puma.com/pl/pl/pd/buty-sportowe-wild-rider-rollin/381517.html?dwvar_381517_color=03#cart",
+            image = R.drawable.p12
+        )
         )
 }

@@ -7,17 +7,19 @@
     tools:context=".Register">
 
     <Button
-        android:id="@+id/LgnBtn"
+        android:id="@+id/registerBtn"
         android:layout_width="173dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="150dp"
         android:background="@drawable/rounded_button"
-        android:text="Zarejestruj"
+        android:text="Create Account"
         app:backgroundTint="#cc0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/remindRepeatPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/repeatPassword"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/lgnPassword"
@@ -27,11 +29,12 @@
         android:background="@drawable/input_rounded"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:ems="10"
-        android:hint="Hasło"
+        android:hint="Password"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lgnMail" />
+        app:layout_constraintTop_toBottomOf="@+id/registerMail" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -44,46 +47,60 @@
         app:srcCompat="@drawable/lg" />
 
     <EditText
-        android:id="@+id/lgnMail"
+        android:id="@+id/registerMail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/input_rounded"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:ems="10"
-        android:hint="Adres email"
+        android:hint="Email"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/remindRepeatPassword"
+        android:id="@+id/repeatPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/input_rounded"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:ems="10"
-        android:hint="Powtórz hasło"
+        android:hint="Password"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lgnPassword" />
 
     <TextView
-        android:id="@+id/remindStatue"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="Resjestrując sie, akceptujesz regulamin i politykę prywatności"
-        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:text="Already have an account?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerBtn" />
+
+    <TextView
+        android:id="@+id/backToLgn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LgnBtn"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.19999999" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

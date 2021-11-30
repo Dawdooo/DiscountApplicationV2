@@ -8,18 +8,18 @@
 
     <Button
         android:id="@+id/LgnBtn"
-        android:layout_width="173dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="252dp"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="250dp"
         android:background="@drawable/rounded_button"
-        android:text="Zaloguj się"
+        android:text="Login"
         app:backgroundTint="#cc0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lgnPassword"
-        app:layout_constraintVertical_bias="0.486" />
+        app:layout_constraintVertical_bias="0.703" />
 
     <EditText
         android:id="@+id/lgnPassword"
@@ -29,11 +29,10 @@
         android:background="@drawable/input_rounded"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:ems="10"
-        android:hint="Hasło"
+        android:hint="Password"
         android:inputType="textPassword"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lgnMail" />
 
@@ -55,11 +54,10 @@
         android:background="@drawable/input_rounded"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:ems="10"
-        android:hint="Adres email"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -81,7 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            android:text="Nie posiadasz konta?"
+            android:text="New User?"
             android:textColor="@color/black" />
 
         <TextView
@@ -89,23 +87,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
-            android:text="Zarejestruj się!"
+            android:text="Sign Up"
             android:textColor="@color/black"
             android:textStyle="bold|italic" />
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/przypomnijTxt"
+        android:id="@+id/forgetTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Przypomnij hasło"
+        android:text="Forget Password?"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:textStyle="bold|italic"
         />
 
     <TextView
@@ -118,6 +117,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/przypomnijTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/forgetTxt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

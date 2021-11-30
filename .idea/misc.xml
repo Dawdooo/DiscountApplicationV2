@@ -8,6 +8,11 @@
         <entry key="..\:/DiscountApp/app/src/main/res/layout/activity_main.xml" value="0.4041666666666667" />
         <entry key="..\:/DiscountApp/app/src/main/res/layout/activity_product_profile.xml" value="0.4041666666666667" />
         <entry key="..\:/DiscountApp/app/src/main/res/layout/activity_register.xml" value="0.4041666666666667" />
+        <entry key="..\:/Projekty/Android/DiscountApp/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.4161458333333333" />
+        <entry key="..\:/Projekty/Android/DiscountApp/app/src/main/res/layout/activity_check_email.xml" value="0.4" />
+        <entry key="..\:/Projekty/Android/DiscountApp/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Projekty/Android/DiscountApp/app/src/main/res/layout/activity_register.xml" value="0.4" />
+        <entry key="..\:/Projekty/Android/DiscountApp/app/src/main/res/layout/activity_remind_password.xml" value="0.4" />
       </map>
     </option>
   </component>

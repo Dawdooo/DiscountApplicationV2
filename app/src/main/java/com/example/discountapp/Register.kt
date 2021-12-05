@@ -21,11 +21,9 @@ class Register : AppCompatActivity() {
 
 
         binding.backToLgn.setOnClickListener {
-
-
-
-
-            }
+var intent = Intent(applicationContext,MainActivity::class.java)
+            startActivity(intent)
+        }
         }
     private  fun registerClick(){
         binding.registerBtn.setOnClickListener {
